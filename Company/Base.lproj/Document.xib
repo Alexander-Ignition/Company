@@ -11,7 +11,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="xOd-HO-29H" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -61,6 +61,9 @@
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
+                                                            <connections>
+                                                                <binding destination="EAP-Vv-nAg" name="value" keyPath="objectValue.firstName" id="GEr-jt-Mbc"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <connections>
@@ -72,6 +75,7 @@
                                     </tableColumns>
                                     <connections>
                                         <binding destination="b5n-CF-XRp" name="content" keyPath="arrangedObjects" id="9zT-vz-Hod"/>
+                                        <binding destination="b5n-CF-XRp" name="selectionIndexes" keyPath="selectionIndexes" previousBinding="9zT-vz-Hod" id="FQ2-Gh-qzP"/>
                                     </connections>
                                 </tableView>
                             </subviews>
@@ -97,6 +101,9 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="b5n-CF-XRp" name="value" keyPath="selection.firstName" id="Bph-U8-n6W"/>
+                        </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05W-7v-IXb">
                         <rect key="frame" x="259" y="335" width="65" height="32"/>
@@ -127,7 +134,7 @@
             </connections>
             <point key="canvasLocation" x="139.5" y="146.5"/>
         </window>
-        <arrayController mode="entity" entityName="Person" id="b5n-CF-XRp">
+        <arrayController mode="entity" entityName="Person" automaticallyPreparesContent="YES" id="b5n-CF-XRp">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="8Vv-BQ-FwG"/>
             </connections>
