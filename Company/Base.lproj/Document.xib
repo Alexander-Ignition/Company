@@ -127,6 +127,21 @@
                             <action selector="remove:" target="b5n-CF-XRp" id="gHf-J4-arF"/>
                         </connections>
                     </button>
+                    <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33w-ZW-9OB">
+                        <rect key="frame" x="265" y="266" width="100" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="WWb-zn-wdr">
+                            <font key="font" metaFont="system"/>
+                            <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                                <!--1982-02-12 16:00:00 +0000-->
+                            </date>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        </datePickerCell>
+                        <connections>
+                            <binding destination="b5n-CF-XRp" name="value" keyPath="selection.birthday" id="Mzd-Mp-PeL"/>
+                        </connections>
+                    </datePicker>
                 </subviews>
             </view>
             <connections>

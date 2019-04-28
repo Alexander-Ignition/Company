@@ -61,3 +61,8 @@ Example application building in UI with cocoa binding and Core Data
     - [x] Bind to: `Array Controller`
     - Controller Key: `selection`
     - Model Key Path: `firstName`
+- Date Picker
+  - Bindings inspector / Value
+    - [x] Bind to: `Array Controller`
+    - Controller Key: `selection`
+    - Model Key Path: `birthday`
