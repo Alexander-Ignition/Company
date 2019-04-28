@@ -66,3 +66,11 @@ Example application building in UI with cocoa binding and Core Data
     - [x] Bind to: `Array Controller`
     - Controller Key: `selection`
     - Model Key Path: `birthday`
+- Image Well
+  - Attributes inspector / Image View
+    - Behavior:
+      - [x] Editable
+   - Bindings inspector / Data
+     - [x] Bind to: `Array Controller`
+     - Controller Key: `selection`
+     - Model Key Path: `photo`

@@ -142,6 +142,14 @@
                             <binding destination="b5n-CF-XRp" name="value" keyPath="selection.birthday" id="Mzd-Mp-PeL"/>
                         </connections>
                     </datePicker>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZo-vp-DO4">
+                        <rect key="frame" x="442" y="348" width="48" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" selectable="YES" editable="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="hr8-R9-rKv"/>
+                        <connections>
+                            <binding destination="b5n-CF-XRp" name="data" keyPath="selection.photo" id="NaD-R9-J97"/>
+                        </connections>
+                    </imageView>
                 </subviews>
             </view>
             <connections>
